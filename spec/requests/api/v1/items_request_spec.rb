@@ -23,49 +23,4 @@ describe "Items API" do
     expect(response).to be_success
     expect(item["id"]).to eq(id)
   end
-
-  it "can create a new item" do
-    item_params = { name: "Saw", unit_price: 1234 }
-
-    post "/api/v1/items", params: {item: item_params}
-    item = Item.last
-
-    assert_response :success
-    expect(response).to be_success
-    expect(item.name).to eq(item_params[:name])
-  end
-
-  it "can update an existing item" do
-    id = create(:item).id
-    previous_name = Item.last.name
-    item_params = { name: "Sledge" }
-
-    put "/api/v1/items/#{id}", params: {item: item_params}
-    item = Item.find_by(id: id)
-
-    expect(response).to be_success
-    expect(item.name).to_not eq(previous_name)
-    expect(item.name).to eq("Sledge")
-  end
-
-  it "can destroy an item" do
-    item = create(:item)
-
-    expect(Item.count).to eq(1)
-
-    delete "/api/v1/items/#{item.id}"
-
-    expect(response).to be_success
-    expect(Item.count).to eq(0)
-    expect{Item.find(item.id)}.to raise_error(ActiveRecord::RecordNotFound)
-  end
-
-  it "can destroy an item" do
-    item = create(:item)
-
-    expect{delete "/api/v1/items/#{item.id}"}.to change(Item, :count).by(-1)
-
-    expect(response).to be_success
-    expect{Item.find(item.id)}.to raise_error(ActiveRecord::RecordNotFound)
-  end
 end
