@@ -1,15 +1,11 @@
 class ItemSerializer < ActiveModel::Serializer
   attributes :id,
+             :merchant_id,
              :name,
-             :unit_price,
              :description,
-             :merchant,
-             :invoice_count,
-             :created_at,
-             :updated_at,
-             :dollar_price
+             :price,
 
-  def invoice_count
-    object.invoices.count
+  def price
+    (object.unit_price / 100.to_f).to_s
   end
 end
