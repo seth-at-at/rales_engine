@@ -3,6 +3,9 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
+      namespace :items do
+        get "/find", to: "find#show"
+      end
       resources :items, except: [:new, :edit]
       resources :merchants, except: [:new, :edit]
       resources :transactions, only: [:index, :show]

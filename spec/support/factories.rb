@@ -1,8 +1,11 @@
 FactoryGirl.define do
+
   factory :item do
     name "Banana"
     unit_price 4321
     description "Provides potassium"
+    created_at "2017-05-02 17:35:14 UTC"
+    merchant
   end
 
   factory :merchant do
@@ -15,20 +18,20 @@ FactoryGirl.define do
   end
 
   factory :invoice do
-    customer_id 1
-    merchant_id 1
+    customer
+    merchant
     status      "shipped"
   end
 
   factory :invoice_item do
-    item_id    1
-    invoice_id 1
+    item
+    invoice
     quantity    1
     unit_price 100
   end
 
   factory :transaction do
-    invoice_id 1
+    invoice
     credit_card_number 4654405418249632
     credit_card_expiration_date nil
     result "success"
