@@ -9,6 +9,11 @@ FactoryGirl.define do
     name "Billy"
   end
 
+  factory :invoice do
+    customer_id 1
+    merchant_id 1
+    status      "shipped"
+  end
   # factory :invoice_item do
   #   item_id    1
   #   invoice_id 1
@@ -21,11 +26,6 @@ FactoryGirl.define do
   #   last_name  "Joe"
   # end
   #
-  # factory :invoice do
-  #   customer_id 1
-  #   merchant_id 1
-  #   status      "shipped"
-  # end
   #
   # factory :transactions do
   #   invoice_id 1

@@ -11,7 +11,7 @@ describe "merchant API" do
     expect(merchants.count).to eq(3)
   end
 
-  it "can get one merchant id" do
+  xit "can get one merchant id" do
     id = create(:merchant).id
 
     get "/api/v1/merchants/#{id}"
