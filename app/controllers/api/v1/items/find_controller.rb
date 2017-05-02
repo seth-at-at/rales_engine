@@ -4,6 +4,12 @@ class Api::V1::Items::FindController < ApplicationController
   end
 private
   def incoming_params
-    params.permit(:id, :name)
+    params.permit(:id,
+                  :name,
+                  :description,
+                  :unit_price,
+                  :created_at,
+                  :updated_at,
+                  :merchant_id)
   end
 end

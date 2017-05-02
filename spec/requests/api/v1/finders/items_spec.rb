@@ -5,7 +5,12 @@ describe "Items API" do
   let(:date) {"2014-03-27T14:54:02.000Z"}
 
   context "find by" do
-    let!(:item_1) { create(:item)}
+    let!(:item_1) { create(:item, merchant_id: 1)}
+    let!(:item_2) { create(:item,
+                            name: "Joe",
+                            description: "seph",
+                            merchant_id: 2,
+                            unit_price: 300)}
 
     it "id" do
       id = item_1.id
@@ -29,5 +34,41 @@ describe "Items API" do
       expect(item['name']).to eq item_1.name
 
     end
+
+    it "description" do
+      description = item_2.description
+
+      get '/api/v1/items/find', params:{ description: description }
+      item = JSON.parse(response.body)
+
+      expect(response).to be_success
+      expect(item['id']).to eq item_2.id
+      expect(item['description']).to eq item_2.description
+    end
+
+    it "unit_price" do
+      unit_price = item_2.unit_price
+
+      get '/api/v1/items/find', params:{ unit_price: unit_price }
+      item = JSON.parse(response.body)
+
+      expect(response).to be_success
+      expect(item['id']).to eq item_2.id
+      expect(item['unit_price']).to eq item_2.unit_price
+    end
+
+    it "created_at" do
+      created_at = item_1.created_at
+
+      get '/api/v1/items/find', params:{ created_at: created_at }
+      # byebug
+      item = JSON.parse(response.body)
+        
+      expect(response).to be_success
+      expect(item['id']).to eq item_1.id
+      expect(item['created_at']).to eq item_1.created_at
+    end
+    it "updated_at"
+    it "merchant_id"
   end
 end

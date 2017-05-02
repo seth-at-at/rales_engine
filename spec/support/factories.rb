@@ -3,6 +3,7 @@ FactoryGirl.define do
     name "Banana"
     unit_price 4321
     description "Provides potassium"
+    created_at "2017-05-02 17:35:14 UTC"
   end
 
   factory :merchant do
