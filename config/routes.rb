@@ -8,6 +8,8 @@ Rails.application.routes.draw do
       end
       resources :items, except: [:new, :edit]
       resources :merchants, except: [:new, :edit]
+      resources :transactions, only: [:index, :show]
+      resources :customers, only: [:index, :show]
       resources :invoices, only: [:index, :show]
       resources :invoice_items, only: [:index, :show]
     end
