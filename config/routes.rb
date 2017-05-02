@@ -5,8 +5,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :items, except: [:new, :edit]
       resources :merchants, except: [:new, :edit]
-      resources :transactions, except: [:new, :edit]
-      resources :customers, except: [:new, :edit]
+      resources :transactions, except: [:index, :show]
+      resources :customers, except: [:index, :show]
     end
   end
 end
