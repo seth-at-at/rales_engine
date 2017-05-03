@@ -6,8 +6,9 @@ Rails.application.routes.draw do
       namespace :items do
         get "/find", to: "find#show"
       end
-      resources :items, except: [:new, :edit]
-      resources :merchants, except: [:new, :edit]
+      resources :items, only: [:index, :show]
+
+      resources :merchants, only: [:index, :show]
       resources :transactions, only: [:index, :show]
       resources :customers, only: [:index, :show]
       resources :invoices, only: [:index, :show]
