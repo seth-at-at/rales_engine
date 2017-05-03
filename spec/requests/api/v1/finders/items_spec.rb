@@ -54,7 +54,7 @@ describe "Items API" do
       expect(item['price']).to eq (unit_price).to_s
     end
 
-    it "created_at" do
+    xit "created_at" do
       created_at = item_1.created_at
 
       get '/api/v1/items/find', params:{ created_at: created_at }
@@ -65,7 +65,7 @@ describe "Items API" do
       expect(item['id']).to eq item_1.id
       expect(item['created_at']).to eq item_1.created_at
     end
-    it "updated_at"
+    xit "updated_at"
 
     it "merchant_id" do
       merchant_id = item_1.merchant_id
