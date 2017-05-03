@@ -2,9 +2,9 @@ class Api::V1::Items::FindController < ApplicationController
   def index
     render json: Item.where(search_params)
   end
-  
+
   def show
-    render json: Item.find_by(search_params)
+    render json: Item.where(search_params).first
   end
 private
   def incoming_params

@@ -15,7 +15,7 @@ namespace :db do
 private
 
 def customers
-  filename = File.join Rails.root, "/lib/assets/fixtures/customers.csv"
+  filename = File.join Rails.root, "/lib/assets/customers.csv"
   CSV.foreach(filename, headers: true) do |row|
     Customer.create(first_name: row["first_name"],
                     last_name:  row["last_name"],
@@ -26,7 +26,7 @@ end
 
 
 def invoices
-  filename = File.join Rails.root, "/lib/assets/fixtures/invoices.csv"
+  filename = File.join Rails.root, "/lib/assets/invoices.csv"
   CSV.foreach(filename, headers: true) do |row|
     Invoice.create(customer_id: row["customer_id"].to_i,
                    merchant_id: row["merchant_id"].to_i,
@@ -37,11 +37,11 @@ def invoices
 end
 
 def items
-  filename = File.join Rails.root, "/lib/assets/fixtures/items.csv"
+  filename = File.join Rails.root, "/lib/assets/items.csv"
   CSV.foreach(filename, headers: true) do |row|
     Item.create(name:        row["name"],
                 description: row["description"],
-                unit_price:  row["unit_price"].to_i/100.0,
+                unit_price:  row["unit_price"],
                 merchant_id: row["merchant_id"].to_i,
                 created_at:  row["created_at"],
                 updated_at:  row["updated_at"])
@@ -49,7 +49,7 @@ def items
 end
 
 def merchants
-  filename = File.join Rails.root, "/lib/assets/fixtures/merchants.csv"
+  filename = File.join Rails.root, "/lib/assets/merchants.csv"
   CSV.foreach(filename, headers: true) do |row|
     Merchant.create(name:       row["name"],
                     created_at: row["created_at"],
@@ -58,7 +58,7 @@ def merchants
 end
 
 def transactions
-  filename = File.join Rails.root, "/lib/assets/fixtures/transactions.csv"
+  filename = File.join Rails.root, "/lib/assets/transactions.csv"
   CSV.foreach(filename, headers: true) do |row|
     Transaction.create(invoice_id:         row["invoice_id"].to_i,
                        credit_card_number: row["credit_card_number"],
@@ -69,7 +69,7 @@ def transactions
 end
 
 def invoice_items
-  filename = File.join Rails.root, "/lib/assets/fixtures/invoice_items.csv"
+  filename = File.join Rails.root, "/lib/assets/invoice_items.csv"
   CSV.foreach(filename, headers: true) do |row|
     InvoiceItem.create!(item_id:    row["item_id"].to_i,
     invoice_id: row["invoice_id"].to_i,

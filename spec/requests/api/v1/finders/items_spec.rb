@@ -51,7 +51,7 @@ describe "Items API" do
 
       expect(response).to be_success
       expect(item['id']).to eq item_2.id
-      expect(item['price']).to eq (unit_price).to_s
+      expect(item['unit_price']).to eq (unit_price).to_s
     end
 
     it "merchant_id" do
@@ -138,7 +138,7 @@ describe "Items API" do
       expect(response).to be_success
       expect(items.count).to eq 2
       items.each do |item|
-        expect(item['price']).to eq "34.56"
+        expect(item['unit_price']).to eq "34.56"
       end
     end
 

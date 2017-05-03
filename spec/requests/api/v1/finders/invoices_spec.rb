@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "Ivoice API" do
+describe "Invoice API" do
 
   let(:date) {"2014-03-27T14:54:02.000Z"}
 
@@ -76,7 +76,7 @@ describe "Ivoice API" do
     end
   end
 
-  context "find_all" do
+  xcontext "find_all" do
     let!(:invoice_1) { create(:invoice) }
     let!(:invoice_2) { create(:invoice) }
 
