@@ -10,7 +10,7 @@ describe 'Invoice API relationship' do
   let!(:invoice_item_1) { create(:invoice_item, invoice: invoice, item: item_1, quantity: 5) }
   let!(:invoice_item_2) { create(:invoice_item, invoice: invoice, item: item_2, quantity: 5) }
 
-  it 'invoice_items' do
+  xit 'invoice_items' do
     get "/api/v1/invoices/#{invoice.id}/invoice_items"
     response_invoice_items = JSON.parse(response.body)
 
@@ -20,7 +20,7 @@ describe 'Invoice API relationship' do
     end
   end
 
-  it 'items' do
+  xit 'items' do
     get "/api/v1/invoices/#{invoice.id}/items"
     response_items = JSON.parse(response.body)
 

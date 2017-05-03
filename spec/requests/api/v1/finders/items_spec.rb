@@ -76,15 +76,15 @@ describe "Items API" do
       expect(item['name']).to eq item_1.name
     end
 
-    xit "updated_at" do
+    it "updated_at" do
       item_2.update(updated_at: date)
 
-      get '/api/v1/invoices/find', params:{ updated_at: date }
-      invoice = JSON.parse(response.body)
+      get '/api/v1/items/find', params:{ updated_at: date }
+      item = JSON.parse(response.body)
 
       expect(response).to be_success
-      expect(invoice['id']).to eq invoice_2.id
-      expect(invoice['name']).to eq invoice_2.name
+      expect(item['id']).to eq item_2.id
+      expect(item['name']).to eq item_2.name
     end
   end
 end
