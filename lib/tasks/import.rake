@@ -24,17 +24,6 @@ def customers
   end
 end
 
-def invoice_items
-  filename = File.join Rails.root, "/lib/assets/fixtures/invoice_items.csv"
-  CSV.foreach(filename, headers: true) do |row|
-    InvoiceItem.create!(item_id:    row["item_id"].to_i,
-                        invoice_id: row["invoice_id"].to_i,
-                        quantity:   row["quantity"].to_i,
-                        unit_price: row["unit_price"],
-                        created_at: row["created_at"],
-                        updated_at: row["updated_at"])
-  end
-end
 
 def invoices
   filename = File.join Rails.root, "/lib/assets/fixtures/invoices.csv"
@@ -76,6 +65,18 @@ def transactions
                        result:             row["result"],
                        created_at:         row["created_at"],
                        updated_at:         row["updated_at"])
+  end
+end
+
+def invoice_items
+  filename = File.join Rails.root, "/lib/assets/fixtures/invoice_items.csv"
+  CSV.foreach(filename, headers: true) do |row|
+    InvoiceItem.create!(item_id:    row["item_id"].to_i,
+    invoice_id: row["invoice_id"].to_i,
+    quantity:   row["quantity"].to_i,
+    unit_price: row["unit_price"],
+    created_at: row["created_at"],
+    updated_at: row["updated_at"])
   end
 end
 end
