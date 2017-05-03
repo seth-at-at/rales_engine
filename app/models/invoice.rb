@@ -4,4 +4,9 @@ class Invoice < ApplicationRecord
   has_many   :invoice_items
   has_many   :items, through: :invoice_items
   has_many   :transactions
+  default_scope -> { order('id ASC') }
+
+  def self.expensive_invoices
+    byebug
+  end
 end
