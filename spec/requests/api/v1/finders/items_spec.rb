@@ -54,29 +54,37 @@ describe "Items API" do
       expect(item['price']).to eq (unit_price).to_s
     end
 
-    it "created_at" do
-      created_at = item_1.created_at
-
-      get '/api/v1/items/find', params:{ created_at: created_at }
-
-      item = JSON.parse(response.body)
-
-      expect(response).to be_success
-      expect(item['id']).to eq item_1.id
-      expect(item['created_at']).to eq item_1.created_at
-    end
-    it "updated_at"
-
     it "merchant_id" do
       merchant_id = item_1.merchant_id
 
       get '/api/v1/items/find', params:{ merchant_id: merchant_id }
-
       item = JSON.parse(response.body)
 
       expect(response).to be_success
       expect(item['id']).to eq item_1.id
       expect(item['merchant_id']).to eq item_1.merchant_id
+    end
+
+    it "created_at" do
+      item_1.update(created_at: date)
+
+      get '/api/v1/items/find', params:{ created_at: date }
+      item = JSON.parse(response.body)
+
+      expect(response).to be_success
+      expect(item['id']).to eq item_1.id
+      expect(item['name']).to eq item_1.name
+    end
+
+    xit "updated_at" do
+      item_2.update(updated_at: date)
+
+      get '/api/v1/invoices/find', params:{ updated_at: date }
+      invoice = JSON.parse(response.body)
+
+      expect(response).to be_success
+      expect(invoice['id']).to eq invoice_2.id
+      expect(invoice['name']).to eq invoice_2.name
     end
   end
 end
