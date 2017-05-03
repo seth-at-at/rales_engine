@@ -91,8 +91,8 @@ describe "Items API" do
   context "find_all" do
     let!(:merchant_1) { create(:merchant) }
     let!(:merchant_2) { create(:merchant) }
-    let!(:item_1) { create(:item, name: "coffee", description: "medium-bodied") }
-    let!(:item_2) { create(:item, name: "coffee", description: "medium-bodied") }
+    let!(:item_1) { create(:item, merchant_id: 1, name: "coffee", description: "medium-bodied") }
+    let!(:item_2) { create(:item, merchant_id: 2, name: "coffee", description: "medium-bodied") }
     let!(:item_3) { create(:item, merchant_id: 1, unit_price: 3456) }
     let!(:item_4) { create(:item, merchant_id: 1, unit_price: 3456) }
 
@@ -123,7 +123,7 @@ describe "Items API" do
       items = JSON.parse(response.body)
 
       expect(response).to be_success
-      expect(items.count).to eq 2
+      expect(items.count).to eq 3
       items.each do |item|
         expect(item['merchant_id']).to eq 1
       end
@@ -163,6 +163,15 @@ describe "Items API" do
 
       expect(response).to be_success
       expect(items.count).to eq 3
+    end
+
+    it "multiple_attributes" do
+      get '/api/v1/items/find_all', params:{ name: "coffee",  merchant_id: 1 }
+      items = JSON.parse(response.body)
+
+      expect(response).to be_success
+      expect(items.first['name']).to eq item_1.name
+      expect(items.first['merchant_id']).to eq item_1.merchant_id
     end
   end
 end
