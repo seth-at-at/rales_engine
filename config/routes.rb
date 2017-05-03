@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       resources :items, only: [:index, :show]
 
       namespace :invoices do
+        get "/find_all",          to: "find#index"
         get "/find",              to: "find#show"
         get "/random",            to: "random#show"
         get "/:id/merchant",      to: "merchant#show"
@@ -25,12 +26,14 @@ Rails.application.routes.draw do
       resources :invoices, only: [:index, :show]
 
       namespace :invoice_items do
+        get "/find_all",          to: "find#index"
         get "/find",              to: "find#show"
         get "/random",            to: "random#show"
       end
       resources :invoice_items, only: [:index, :show]
 
       namespace :merchants do
+        get "/find_all",          to: "find#index"
         get "/find",              to: "find#show"
         get "/random",            to: "random#show"
         get "/:id/items",         to: "items#index"
@@ -39,6 +42,7 @@ Rails.application.routes.draw do
       resources :merchants, only: [:index, :show]
 
       namespace :transactions do
+        get "/find_all",          to: "find#index"
         get "/find",              to: "find#show"
         get "/random",            to: "random#show"
         get "/:id/invoice",       to: "invoice#show"
@@ -46,6 +50,7 @@ Rails.application.routes.draw do
       resources :transactions, only: [:index, :show]
 
       namespace :customers do
+        get "/find_all",          to: "find#index"
         get "/find",              to: "find#show"
         get "/random",            to: "random#show"
         get "/:id/invoices",      to: "invoices#index"
