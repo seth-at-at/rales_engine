@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "Ivoice_item API" do
+describe "Invoice_item API" do
 
   let(:date) {"2014-03-27T14:54:02.000Z"}
 
@@ -59,7 +59,7 @@ describe "Ivoice_item API" do
 
       expect(response).to be_success
       expect(invoice_item['id']).to eq invoice_item_2.id
-      expect(invoice_item['price']).to eq (unit_price).to_s
+      expect(invoice_item['unit_price']).to eq (unit_price).to_s
     end
 
     it "created_at" do
