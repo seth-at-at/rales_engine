@@ -27,7 +27,6 @@ describe "Ivoice_item API" do
       expect(response).to be_success
       expect(invoice_item['id']).to eq invoice_item_2.id
       expect(invoice_item['invoice_id']).to eq invoice_item_2.invoice_id
-
     end
 
     it "item_id" do
