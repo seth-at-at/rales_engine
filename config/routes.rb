@@ -30,6 +30,8 @@ Rails.application.routes.draw do
       namespace :merchants do
         get "/find", to: "find#show"
         get "/random", to: "random#show"
+        get "/:id/items", to: "items#show"
+        get "/:id/invoices", to: "invoices#show"
       end
       resources :merchants, only: [:index, :show]
 
