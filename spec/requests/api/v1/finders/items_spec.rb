@@ -58,7 +58,6 @@ describe "Items API" do
       merchant_id = item_1.merchant_id
 
       get '/api/v1/items/find', params:{ merchant_id: merchant_id }
-      # byebug
       item = JSON.parse(response.body)
 
       expect(response).to be_success
