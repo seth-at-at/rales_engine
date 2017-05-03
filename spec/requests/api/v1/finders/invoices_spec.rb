@@ -54,19 +54,26 @@ describe "Ivoice API" do
       expect(invoice['status']).to eq invoice_1.status
     end
 
-    xit "created_at" do
-      created_at = invoice_1.created_at
+    it "created_at" do
+      invoice_1.update(created_at: date)
 
-      get '/api/v1/invoices/find', params:{ created_at: created_at }
-      # byebug
+      get '/api/v1/invoices/find', params:{ created_at: date }
       invoice = JSON.parse(response.body)
 
       expect(response).to be_success
       expect(invoice['id']).to eq invoice_1.id
-      expect(invoice['created_at']).to eq invoice_1.created_at
+      expect(invoice['customer_id']).to eq invoice_1.customer_id
     end
 
-    xit "updated_at"
+    it "updated_at" do
+      invoice_2.update(updated_at: date)
 
+      get '/api/v1/invoices/find', params:{ updated_at: date }
+      invoice = JSON.parse(response.body)
+
+      expect(response).to be_success
+      expect(invoice['id']).to eq invoice_2.id
+      expect(invoice['customer_id']).to eq invoice_2.customer_id
+    end
   end
 end

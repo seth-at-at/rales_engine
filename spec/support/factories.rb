@@ -4,7 +4,8 @@ FactoryGirl.define do
     name { Faker::Commerce.product_name }
     description { Faker::Hipster.sentence(3) }
     unit_price { Faker::Number.between(1, 50000)}
-    created_at "2017-05-02 17:35:14 UTC"
+    created_at "2017-04-02 17:35:14 UTC"
+    updated_at "2017-05-02 17:35:14 UTC"
     merchant
   end
 
