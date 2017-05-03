@@ -61,7 +61,6 @@ describe "Items API" do
       created_at = item_1.created_at
 
       get '/api/v1/items/find', params:{ created_at: created_at }
-      byebug
       item = JSON.parse(response.body)
 
       expect(response).to be_success

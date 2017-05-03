@@ -6,8 +6,7 @@ class ItemSerializer < ActiveModel::Serializer
              :merchant,
              :invoice_count,
              :created_at,
-             :updated_at,
-             :dollar_price
+             :updated_at
 
   def invoice_count
     object.invoices.count
