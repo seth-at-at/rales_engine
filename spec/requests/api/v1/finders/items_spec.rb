@@ -77,7 +77,7 @@ describe "Items API" do
       expect(item['name']).to eq item_1.name
     end
 
-    xbit "updated_at" do
+    xit "updated_at" do
       item_2.update(updated_at: date)
 
       get '/api/v1/invoices/find', params:{ updated_at: date }
