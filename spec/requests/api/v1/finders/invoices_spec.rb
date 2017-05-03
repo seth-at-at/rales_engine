@@ -35,7 +35,6 @@ describe "Ivoice API" do
       merchant_id = invoice_2.merchant_id
 
       get '/api/v1/invoices/find', params:{ merchant_id: merchant_id }
-      # byebug
       invoice = JSON.parse(response.body)
 
       expect(response).to be_success
