@@ -78,5 +78,12 @@ describe "transaction API" do
       expect(response).to be_success
       expect(transaction['id']).to eq transaction_2.id
     end
+
+    it "random transaction" do
+      get '/api/v1/transactions/random'
+      JSON.parse(response.body)
+
+      expect(response).to be_success
+    end
   end
 end
