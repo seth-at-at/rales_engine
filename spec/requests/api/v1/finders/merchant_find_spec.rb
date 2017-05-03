@@ -47,5 +47,12 @@ describe "merchant API" do
       expect(response).to be_success
       expect(merchant['id']).to eq merchant_2.id
     end
+
+    it "random merchant" do
+      get '/api/v1/merchants/random'
+      JSON.parse(response.body)
+
+      expect(response).to be_success
+    end
   end
 end
