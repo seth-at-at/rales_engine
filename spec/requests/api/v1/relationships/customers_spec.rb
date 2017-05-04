@@ -35,3 +35,8 @@ describe 'Customer API relationship' do
 
 
 end
+
+
+
+
+#find invoice_items for single merchant_id
