@@ -1,3 +1,7 @@
 class MerchantsPendingSerializer < ActiveModel::Serializer
-  attributes :id, :first_name, :last_name
+  attributes :customers
+
+  def customers
+    object
+  end
 end

@@ -37,10 +37,6 @@ class Merchant < ApplicationRecord
   end
 
   def customers_with_pending_invoices
-    invoices.unsuccesful
-    .group(:customer)
-    .order('count_all DESC')
-    .count
-    .keys
+    invoices.failed.group(:customer).count
   end
 end
