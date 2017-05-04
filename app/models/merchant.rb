@@ -21,16 +21,26 @@ class Merchant < ApplicationRecord
 
   def params_check(date=nil)
     if date
-      Date.parse(date)
       revenue_on_date(date)
     else
       total_revenue
     end
   end
+
+  def favorite_customer
+    invoices.successful
+    .group(:customer)
+    .order('count_all DESC')
+    .count
+    .keys
+    .first
+  end
+
+  def customers_with_pending_invoices
+    invoices.unsuccesful
+    .group(:customer)
+    .order('count_all DESC')
+    .count
+    .keys
+  end
 end
-
-# all invoices for merchant merchant.invoices
-# for each invoice all invoice items
-# for each invoice_items get item price and quantity
-
-#
