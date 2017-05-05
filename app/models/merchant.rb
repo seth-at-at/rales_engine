@@ -25,7 +25,6 @@ class Merchant < ApplicationRecord
     .merge(InvoiceItem.successful)
     .where("invoices.created_at = '#{date}'")
     .sum("unit_price * quantity")
-    # { "revenue" => "#{result}" }
   end
 
   def total_revenue
