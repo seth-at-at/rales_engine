@@ -12,7 +12,6 @@ Rails.application.routes.draw do
         get "/most_revenue",          to: "most_revenue#show"
         get "/most_items",            to: "most_items#show"
         get "/:id/best_day",          to: "best_day#show"
-
       end
       resources :items, only: [:index, :show]
 
