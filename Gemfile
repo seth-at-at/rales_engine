@@ -33,6 +33,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'database_cleaner'
   gem 'faker'
+  gem 'shoulda-matchers', '~> 3.0'
   gem 'simplecov'
 end
 
