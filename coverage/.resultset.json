@@ -1,25 +1,25 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/stover/turing/3module/projects/rales_engine/spec/support/factories.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/support/factories.rb": [
         1,
         null,
         1,
-        89,
-        77,
-        78,
+        79,
+        67,
+        68,
         1,
         1,
         1,
         null,
         null,
         1,
-        167,
+        153,
         null,
         null,
         1,
-        113,
-        113,
+        109,
+        109,
         null,
         null,
         1,
@@ -45,7 +45,254 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/spec/requests/api/v1/business_intelligence/customers_favorite_merchant_spec.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/models/customer.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/models/application_record.rb": [
+        1,
+        1,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/models/invoice_item_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/models/invoice_item.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        2,
+        null,
+        null
+      ],
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/models/invoice_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/models/invoice.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        3,
+        1,
+        null,
+        null
+      ],
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/models/item_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/models/item.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/models/merchant_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/models/merchant.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/models/transaction_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/models/transaction.rb": [
+        1,
+        1,
+        null,
+        4,
+        1,
+        null,
+        null
+      ],
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/requests/api/v1/business_intelligence/all_merchant_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/requests/api/v1/business_intelligence/customers_favorite_merchant_spec.rb": [
         1,
         null,
         1,
@@ -70,7 +317,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/spec/requests/api/v1/business_intelligence/single_merchant_total_revenue_spec.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/requests/api/v1/business_intelligence/single_merchant_total_revenue_spec.rb": [
         1,
         null,
         1,
@@ -117,7 +364,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/spec/requests/api/v1/endpoints/customer_requests_spec.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/requests/api/v1/endpoints/customer_requests_spec.rb": [
         1,
         null,
         1,
@@ -140,7 +387,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/spec/requests/api/v1/endpoints/invoice_items_requests_spec.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/requests/api/v1/endpoints/invoice_items_requests_spec.rb": [
         1,
         null,
         1,
@@ -163,7 +410,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/spec/requests/api/v1/endpoints/invoice_requests_spec.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/requests/api/v1/endpoints/invoice_requests_spec.rb": [
         1,
         null,
         1,
@@ -186,7 +433,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/spec/requests/api/v1/endpoints/items_request_spec.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/requests/api/v1/endpoints/items_request_spec.rb": [
         1,
         null,
         1,
@@ -214,7 +461,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/spec/requests/api/v1/endpoints/merchant_requests_spec.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/requests/api/v1/endpoints/merchant_requests_spec.rb": [
         1,
         null,
         1,
@@ -237,7 +484,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/spec/requests/api/v1/endpoints/transaction_requests_spec.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/requests/api/v1/endpoints/transaction_requests_spec.rb": [
         1,
         null,
         1,
@@ -260,7 +507,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/spec/requests/api/v1/finders/customer_find_spec.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/requests/api/v1/finders/customer_find_spec.rb": [
         1,
         null,
         1,
@@ -323,7 +570,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/spec/requests/api/v1/finders/invoice_items_spec.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/requests/api/v1/finders/invoice_items_spec.rb": [
         1,
         null,
         1,
@@ -412,7 +659,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/spec/requests/api/v1/finders/invoices_spec.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/requests/api/v1/finders/invoices_spec.rb": [
         1,
         null,
         1,
@@ -553,7 +800,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/spec/requests/api/v1/finders/items_spec.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/requests/api/v1/finders/items_spec.rb": [
         1,
         null,
         1,
@@ -732,7 +979,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/spec/requests/api/v1/finders/merchant_find_spec.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/requests/api/v1/finders/merchant_find_spec.rb": [
         1,
         null,
         1,
@@ -792,7 +1039,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/spec/requests/api/v1/finders/transaction_find_spec.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/requests/api/v1/finders/transaction_find_spec.rb": [
         1,
         null,
         1,
@@ -883,7 +1130,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/spec/requests/api/v1/relationships/customers_spec.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/requests/api/v1/relationships/customers_spec.rb": [
         1,
         null,
         1,
@@ -927,7 +1174,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/spec/requests/api/v1/relationships/invoices_items_spec.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/requests/api/v1/relationships/invoices_items_spec.rb": [
         1,
         null,
         1,
@@ -957,7 +1204,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/spec/requests/api/v1/relationships/invoices_spec.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/requests/api/v1/relationships/invoices_spec.rb": [
         1,
         null,
         1,
@@ -1025,7 +1272,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/spec/requests/api/v1/relationships/items_spec.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/requests/api/v1/relationships/items_spec.rb": [
         1,
         null,
         1,
@@ -1058,7 +1305,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/spec/requests/api/v1/relationships/merchants_spec.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/requests/api/v1/relationships/merchants_spec.rb": [
         1,
         null,
         1,
@@ -1097,7 +1344,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/spec/requests/api/v1/relationships/transactions_spec.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/requests/api/v1/relationships/transactions_spec.rb": [
         1,
         null,
         1,
@@ -1115,7 +1362,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/spec/requests/api/v1/revenue_request_spec.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/spec/requests/api/v1/revenue_request_spec.rb": [
         1,
         null,
         1,
@@ -1128,135 +1375,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/models/item.rb": [
-        1,
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/models/application_record.rb": [
-        1,
-        1,
-        1,
-        2,
-        null,
-        null
-      ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/models/merchant.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        0,
-        null,
-        null,
-        1,
-        1,
-        0,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        0,
-        null,
-        null
-      ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/models/customer.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null
-      ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/models/invoice.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        4,
-        1,
-        null,
-        null
-      ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/models/invoice_item.rb": [
-        1,
-        1,
-        1,
-        1,
-        null,
-        2,
-        null,
-        null
-      ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/models/transaction.rb": [
-        1,
-        1,
-        null,
-        5,
-        1,
-        null,
-        null
-      ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/merchants/most_revenue_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/application_controller.rb": [
-        1,
-        null
-      ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/customers/favorite_merchant_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/customers/favorite_merchant_controller.rb": [
         1,
         1,
         1,
@@ -1264,12 +1383,16 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/serializers/customers_favorite_merchant_serializer.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/application_controller.rb": [
+        1,
+        null
+      ],
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/serializers/customers_favorite_merchant_serializer.rb": [
         1,
         1,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/merchants/revenue_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/merchants/revenue_controller.rb": [
         1,
         1,
         1,
@@ -1277,7 +1400,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/serializers/merchant_revenue_serializer.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/serializers/merchant_revenue_serializer.rb": [
         1,
         1,
         null,
@@ -1286,7 +1409,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/merchants/favorite_customer_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/merchants/favorite_customer_controller.rb": [
         1,
         1,
         1,
@@ -1294,12 +1417,12 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/serializers/merchant_favorite_customer_serializer.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/serializers/merchant_favorite_customer_serializer.rb": [
         1,
         1,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/customers_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/customers_controller.rb": [
         1,
         1,
         1,
@@ -1310,14 +1433,14 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/serializers/customer_serializer.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/serializers/customer_serializer.rb": [
         1,
         1,
         null,
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/invoice_items_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/invoice_items_controller.rb": [
         1,
         1,
         1,
@@ -1328,7 +1451,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/serializers/invoice_item_serializer.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/serializers/invoice_item_serializer.rb": [
         1,
         1,
         null,
@@ -1341,7 +1464,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/invoices_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/invoices_controller.rb": [
         1,
         1,
         1,
@@ -1352,7 +1475,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/serializers/invoice_serializer.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/serializers/invoice_serializer.rb": [
         1,
         1,
         null,
@@ -1360,7 +1483,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/items_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/items_controller.rb": [
         1,
         null,
         1,
@@ -1372,7 +1495,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/serializers/item_serializer.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/serializers/item_serializer.rb": [
         1,
         1,
         null,
@@ -1385,7 +1508,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/merchants_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/merchants_controller.rb": [
         1,
         1,
         1,
@@ -1396,13 +1519,13 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/serializers/merchant_serializer.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/serializers/merchant_serializer.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/transactions_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/transactions_controller.rb": [
         1,
         1,
         1,
@@ -1413,7 +1536,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/serializers/transaction_serializer.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/serializers/transaction_serializer.rb": [
         1,
         1,
         null,
@@ -1425,7 +1548,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/customers/find_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/customers/find_controller.rb": [
         1,
         1,
         0,
@@ -1444,7 +1567,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/invoice_items/find_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/invoice_items/find_controller.rb": [
         1,
         1,
         0,
@@ -1476,7 +1599,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/invoices/find_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/invoices/find_controller.rb": [
         1,
         1,
         0,
@@ -1496,7 +1619,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/items/find_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/items/find_controller.rb": [
         1,
         1,
         7,
@@ -1530,7 +1653,7 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/merchants/find_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/merchants/find_controller.rb": [
         1,
         1,
         0,
@@ -1549,14 +1672,14 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/merchants/random_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/merchants/random_controller.rb": [
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/transactions/find_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/transactions/find_controller.rb": [
         1,
         1,
         0,
@@ -1579,105 +1702,105 @@
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/transactions/random_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/transactions/random_controller.rb": [
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/customers/invoices_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/customers/invoices_controller.rb": [
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/customers/transactions_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/customers/transactions_controller.rb": [
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/invoice_items/invoice_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/invoice_items/invoice_controller.rb": [
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/invoice_items/item_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/invoice_items/item_controller.rb": [
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/invoices/invoice_items_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/invoices/invoice_items_controller.rb": [
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/invoices/items_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/invoices/items_controller.rb": [
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/invoices/transactions_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/invoices/transactions_controller.rb": [
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/invoices/customer_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/invoices/customer_controller.rb": [
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/invoices/merchant_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/invoices/merchant_controller.rb": [
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/items/invoice_items_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/items/invoice_items_controller.rb": [
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/items/merchant_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/items/merchant_controller.rb": [
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/merchants/items_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/merchants/items_controller.rb": [
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/merchants/invoices_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/merchants/invoices_controller.rb": [
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/stover/turing/3module/projects/rales_engine/app/controllers/api/v1/transactions/invoice_controller.rb": [
+      "/Users/sethmoser/1701/mod3/projects/rales_engine/app/controllers/api/v1/transactions/invoice_controller.rb": [
         1,
         1,
         1,
@@ -1685,6 +1808,6 @@
         null
       ]
     },
-    "timestamp": 1493939741
+    "timestamp": 1493999771
   }
 }
