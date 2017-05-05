@@ -4,6 +4,29 @@ class Merchant < ApplicationRecord
 
   has_many :invoice_items, through: :invoices
 
+  def self.top_merchants(quantity = 1)
+    joins(:invoice_items)
+    .merge(Invoice.successful)
+    .group("merchants.id")
+    .order("sum(unit_price * quantity) DESC")
+    .first(quantity)
+  end
+
+  def self.most_items(quantity = 1)
+    joins(:invoice_items)
+    .merge(Invoice.successful)
+    .group("merchants.id")
+    .order("sum(quantity) DESC")
+    .first(quantity)
+  end
+
+  def self.revenue_by_date(date)
+    joins(:invoice_items)
+    .merge(InvoiceItem.successful)
+    .where("invoices.created_at = '#{date}'")
+    .sum("unit_price * quantity")
+    # { "revenue" => "#{result}" }
+  end
 
   def total_revenue
     invoices

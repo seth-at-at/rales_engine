@@ -7,6 +7,9 @@ require 'spec_helper'
 require 'rspec/rails'
 require 'support/factory_girl'
 require 'database_cleaner'
+require 'simplecov'
+
+SimpleCov.start
 
 DatabaseCleaner.strategy = :truncation
 DatabaseCleaner.clean
