@@ -1,5 +1,6 @@
 class Item < ApplicationRecord
   belongs_to :merchant
+
   has_many   :invoice_items
   has_many   :invoices, through: :invoice_items
 
@@ -20,11 +21,11 @@ class Item < ApplicationRecord
   end
 
   def best_day
-    result = invoices
+    invoices
     .successful
     .group(:id)
     .order("sum(quantity * unit_price) DESC")
     .first.created_at
-    {"best_day"=>"#{result}"}
+    # {"best_day"=>"#{result}"}
   end
 end

@@ -1,7 +1,6 @@
 class Merchant < ApplicationRecord
   has_many :items
   has_many :invoices
-
   has_many :invoice_items, through: :invoices
 
   def self.top_merchants(quantity = 1)
@@ -25,7 +24,6 @@ class Merchant < ApplicationRecord
     .merge(InvoiceItem.successful)
     .where("invoices.created_at = '#{date}'")
     .sum("unit_price * quantity")
-    # { "revenue" => "#{result}" }
   end
 
   def total_revenue
