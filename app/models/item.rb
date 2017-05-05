@@ -23,7 +23,7 @@ class Item < ApplicationRecord
     result = invoices
     .successful
     .group(:id)
-    .order("sum(quantity * unit_price) DESC")
+    .order("sum(quantity) DESC")
     .first.created_at
     {"best_day"=>"#{result}"}
   end

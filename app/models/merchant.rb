@@ -60,10 +60,8 @@ class Merchant < ApplicationRecord
   end
 
   def customers_with_pending_invoices
-    invoices.unsuccesful
-    .group(:customer)
-    .order('count_all DESC')
-    .count
-    .keys
+    success = invoices.successful.pluck(:customer_id)
+    failed = invoices.where.not(customer_id: success).pluck(:customer_id)
+    Customer.where(id: failed)
   end
 end
